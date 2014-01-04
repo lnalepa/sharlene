@@ -70,9 +70,8 @@ h2{
     height:550px;
 }
 
-#slide3 .circle{
+.portfolioNav .circle{
     border-color: #999999;
-    background-color: #56C19D;
     margin: 0px;
     cursor:pointer;
     position: absolute;
@@ -86,17 +85,25 @@ h2{
     z-index:1000000;
 }
 
-#slide3 .circle:hover{
+#clothingNav .circle{
+     background-color: #BCC5CA;
+
+}
+
+#jewelryNav .circle{
+    background-color: #BCC5CA;
+}
+
+#clothingNav .circle:hover, #jewelryNav .circle:hover{
     border-color:#999999;
     background-color: #7C8A92;
 }
 
-#slide3 .circle.selected{
+#clothingNav .circle.selected, #jewelryNav .circle.selected{
     border-color: #999999;
     background-color: #a82a35;
     margin: 0px;
 }
-
 
 .popup_anchor {
 position: relative;
@@ -124,16 +131,22 @@ height: 0px;
     height:190px;   
 }
 
-#portfolioNav{
+.portfolioNav{
     padding-bottom:50px;
-    width:128px;
+    width:132px;
     margin:0 auto;
 }
+
 
 .portfolioSlide img{
     text-align: center;
     position: relative;
     display:inline-block;
+}
+
+#jewelrySlide{
+    width:650px;
+    height:400px;  
 }
 
 #portfolioSlide img{
@@ -163,7 +176,12 @@ height: 0px;
 }
 
 #jewelrySlide #jewelry1{
-    width:200px;
+    width:400px;
+}
+
+
+#jewelrySlide img{
+    width:400px;
 }
 
 #slide4{
@@ -216,6 +234,7 @@ height: 0px;
     margin-top:50px;
 }
 
+
 #slide6 #logos{
     margin-bottom:50px;
 }
@@ -232,6 +251,11 @@ height: 0px;
 
 #logos img{
     padding:0 20px 0 20px;
+}
+
+#logos img:hover{
+    padding:0 20px 0 20px;
+    opacity:0.75;
 }
 
 .logo{

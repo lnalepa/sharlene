@@ -9,13 +9,13 @@
 
 <script type="text/javascript">
 
-    function getSlide(action, num){
+    function getSlide(section, action, num){
         var change = true; 
         var oldImg;
         var newImg; 
 
-        oldImg = $('#clothingPictures img.sel').attr('id');
-        oldImg = oldImg.substr(8,oldImg.length);
+        oldImg = $('#'+section+'Pictures img.sel').attr('id');
+        oldImg = oldImg.substr(section.length ,oldImg.length);
 
 
         if (action == 'prev'){
@@ -40,11 +40,11 @@
 
         if (change){
             
-            $('#clothing' + oldImg).fadeOut(400, function(){$('#clothing' + newImg).fadeIn(500);} );
-            $('#circle' + oldImg).removeClass('selected');
-            $('#clothing' + oldImg).removeClass('sel');
-            $('#clothing' + newImg).addClass('sel');
-            $('#circle' + newImg).addClass('selected');
+            $('#' + section + oldImg).fadeOut(400, function(){$('#' + section + newImg).fadeIn(500);} );
+            $('#' + section + 'circle' + oldImg).removeClass('selected');
+            $('#' + section + oldImg).removeClass('sel');
+            $('#' + section + newImg).addClass('sel');
+            $('#' + section+ 'circle' + newImg).addClass('selected');
         }
     }
 
@@ -70,18 +70,18 @@
     <div id="slide3" class="slide">
         <div style="width:980px; margin:0 auto;">
         <h2>DESIGNS</h2>
-        <div id="portfolioNav">
-            <div class="popup_anchor"><div id="circle1" class="circle selected" onClick="getSlide('jump', '1')"></div></div>
-            <div class="popup_anchor" style="left:18px"><div id="circle2"  class="circle" onClick="getSlide('jump', '2')"></div></div>
-            <div class="popup_anchor" style="left:36px"><div id="circle3"  class="circle" onClick="getSlide('jump', '3')"></div></div>
-            <div class="popup_anchor" style="left:54px"><div id="circle4"  class="circle" onClick="getSlide('jump','4')"></div></div>
-            <div class="popup_anchor" style="left:72px"><div id="circle5"  class="circle" onClick="getSlide('jump','5')"></div></div>
-            <div class="popup_anchor" style="left:90px"><div id="circle6"  class="circle" onClick="getSlide('jump','6')"></div></div>
-            <div class="popup_anchor" style="left:108px"><div id="circle7"  class="circle" onClick="getSlide('jump','7')"></div></div>
-            <div class="popup_anchor" style="left:126px"><div id="circle8"  class="circle" onClick="getSlide('jump','8')"></div></div>
+        <div id="clothingNav" class="portfolioNav">
+            <div class="popup_anchor"><div id="clothingcircle1" class="circle selected" onClick="getSlide('clothing', 'jump', '1')"></div></div>
+            <div class="popup_anchor" style="left:18px"><div id="clothingcircle2"  class="circle" onClick="getSlide('clothing', 'jump', '2')"></div></div>
+            <div class="popup_anchor" style="left:36px"><div id="clothingcircle3"  class="circle" onClick="getSlide('clothing', 'jump', '3')"></div></div>
+            <div class="popup_anchor" style="left:54px"><div id="clothingcircle4"  class="circle" onClick="getSlide('clothing', 'jump','4')"></div></div>
+            <div class="popup_anchor" style="left:72px"><div id="clothingcircle5"  class="circle" onClick="getSlide('clothing', 'jump','5')"></div></div>
+            <div class="popup_anchor" style="left:90px"><div id="clothingcircle6"  class="circle" onClick="getSlide('clothing', 'jump','6')"></div></div>
+            <div class="popup_anchor" style="left:108px"><div id="clothingcircle7"  class="circle" onClick="getSlide('clothing', 'jump','7')"></div></div>
+            <div class="popup_anchor" style="left:126px"><div id="clothingcircle8"  class="circle" onClick="getSlide('clothing', 'jump','8')"></div></div>
         </div>
         <div style="width:980px; margin:0 auto; width:800px;">
-            <div class="floatLeft button" onClick="getSlide('prev', '')"><img src="img/backIcon.png" /></div>
+            <div class="floatLeft button" onClick="getSlide('clothing', prev', '')"><img src="img/backIcon.png" /></div>
             <div class="portfolioSlide floatLeft" id="portfolioSlide">
                 <div id="clothingPictures" style="overflow:hidden; width:650px; height:400px;">
                     <img id="clothing1" class="sel" src="img/clothing1b.png"/>
@@ -94,10 +94,44 @@
                     <img id="clothing8" src="img/clothingh.png" style="display:none;"/>
                 </div>
             </div>
-            <div class="floatLeft button" onClick="getSlide('next','')"><img src="img/nextIcon.png" /></div>
+            <div class="floatLeft button" onClick="getSlide('clothing', 'next','')"><img src="img/nextIcon.png" /></div>
         </div>
         </div>
     </div>
+
+    <div id="slide9" class="slide">
+        <div style="width:980px; margin:0 auto;">
+        <h2>JEWELRY</h2>
+        <div id="jewelryNav" class="portfolioNav">
+            <div class="popup_anchor"><div id="jewelrycircle1" class="circle selected" onClick="getSlide('jewelry', 'jump', '1')"></div></div>
+            <div class="popup_anchor" style="left:18px"><div id="jewelrycircle2"  class="circle" onClick="getSlide('jewelry', 'jump', '2')"></div></div>
+            <div class="popup_anchor" style="left:36px"><div id="jewelrycircle3"  class="circle" onClick="getSlide('jewelry', 'jump', '3')"></div></div>
+            <div class="popup_anchor" style="left:54px"><div id="jewelrycircle4"  class="circle" onClick="getSlide('jewelry', 'jump','4')"></div></div>
+            <div class="popup_anchor" style="left:72px"><div id="jewelrycircle5"  class="circle" onClick="getSlide('jewelry', 'jump','5')"></div></div>
+            <div class="popup_anchor" style="left:90px"><div id="jewelrycircle6"  class="circle" onClick="getSlide('jewelry', 'jump','6')"></div></div>
+            <div class="popup_anchor" style="left:108px"><div id="jewelrycircle7"  class="circle" onClick="getSlide('jewelry', 'jump','7')"></div></div>
+            <div class="popup_anchor" style="left:126px"><div id="jewelrycircle8"  class="circle" onClick="getSlide('jewelry', 'jump','8')"></div></div>
+        </div>
+        <div style="width:980px; margin:0 auto; width:800px;">
+            <div class="floatLeft button" onClick="getSlide('jewelry', 'prev', '')"><img src="img/backIcon.png" /></div>
+            <div class="portfolioSlide floatLeft" id="jewelrySlide">
+                <div id="jewelryPictures" style="overflow:hidden; width:650px; height:400px;">
+                    <img id="jewelry1" class="sel" src="img/jewelryb.png"/>
+                    <img id="jewelry2" src="img/jewelryc.png" style="display:none;"/>
+                    <img id="jewelry3" src="img/jewelryb.png" style="display:none;"/>
+                    <img id="jewelry4" src="img/jewelryb.png" style="display:none;"/>
+                    <img id="jewelry5" src="img/jewelryb.png" style="display:none;"/>
+                    <img id="jewelry6" src="img/jewelryb.png" style="display:none;"/>
+                    <img id="jewelry7" src="img/jewelryb.png" style="display:none;"/>
+                    <img id="jewelry8" src="img/jewelryb.png" style="display:none;"/>
+                </div>
+            </div>
+            <div class="floatLeft button" onClick="getSlide('jewelry', 'next','')"><img src="img/nextIcon.png" /></div>
+        </div>
+        </div>
+    </div>
+
+
 
     <div class="slide" id="slide4">
         <div id="sharlene" >
