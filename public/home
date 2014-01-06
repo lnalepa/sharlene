@@ -10,6 +10,7 @@
 <script type="text/javascript">
 
     function getSlide(section, action, num){
+       
         var change = true; 
         var oldImg;
         var newImg; 
@@ -27,7 +28,7 @@
             }    
         }
         else if (action == 'next'){
-            if (parseInt(oldImg) == 8){
+            if ((parseInt(oldImg) == 8 && section == 'clothing')||(parseInt(oldImg) == 10 && section == 'jewelry')){
                 change = false; 
             }
             else{
@@ -111,6 +112,8 @@
             <div class="popup_anchor" style="left:90px"><div id="jewelrycircle6"  class="circle" onClick="getSlide('jewelry', 'jump','6')"></div></div>
             <div class="popup_anchor" style="left:108px"><div id="jewelrycircle7"  class="circle" onClick="getSlide('jewelry', 'jump','7')"></div></div>
             <div class="popup_anchor" style="left:126px"><div id="jewelrycircle8"  class="circle" onClick="getSlide('jewelry', 'jump','8')"></div></div>
+            <div class="popup_anchor" style="left:144px"><div id="jewelrycircle9"  class="circle" onClick="getSlide('jewelry', 'jump','9')"></div></div>
+            <div class="popup_anchor" style="left:162px"><div id="jewelrycircle10"  class="circle" onClick="getSlide('jewelry', 'jump','10')"></div></div>
         </div>
         <div style="width:980px; margin:0 auto; width:800px;">
             <div class="floatLeft button" onClick="getSlide('jewelry', 'prev', '')"><img src="img/backIcon.png" /></div>
@@ -118,12 +121,14 @@
                 <div id="jewelryPictures" style="overflow:hidden; width:650px; height:400px;">
                     <img id="jewelry1" class="sel" src="img/jewelryb.png"/>
                     <img id="jewelry2" src="img/jewelryc.png" style="display:none;"/>
-                    <img id="jewelry3" src="img/jewelryb.png" style="display:none;"/>
-                    <img id="jewelry4" src="img/jewelryb.png" style="display:none;"/>
-                    <img id="jewelry5" src="img/jewelryb.png" style="display:none;"/>
-                    <img id="jewelry6" src="img/jewelryb.png" style="display:none;"/>
-                    <img id="jewelry7" src="img/jewelryb.png" style="display:none;"/>
-                    <img id="jewelry8" src="img/jewelryb.png" style="display:none;"/>
+                    <img id="jewelry3" src="img/jewelryd.png" style="display:none;"/>
+                    <img id="jewelry4" src="img/jewelrye.png" style="display:none;"/>
+                    <img id="jewelry5" src="img/jewelryf.png" style="display:none;"/>
+                    <img id="jewelry6" src="img/jewelryg.png" style="display:none;"/>
+                    <img id="jewelry7" src="img/jewelryh.png" style="display:none;"/>
+                    <img id="jewelry8" src="img/jewelryi.png" style="display:none;"/>
+                    <img id="jewelry9" src="img/jewelryj.png" style="display:none;"/>
+                    <img id="jewelry10" src="img/jewelryk.png" style="display:none;"/>
                 </div>
             </div>
             <div class="floatLeft button" onClick="getSlide('jewelry', 'next','')"><img src="img/nextIcon.png" /></div>
@@ -140,7 +145,7 @@
             </div>
         </div>
         <div id="aboutDescription" style="text-align:center; width:600px; margin:0 auto;">
-            <p style="padding-bottom:10px;">Sharlene Robertson aspires to be a Fashion Designer. She is a Fashion Design student in her third year at Ryerson University</p>
+            <p style="padding-bottom:10px;">Sharlene Robertson aspires to be a Fashion Designer. She is a Fashion Design student in her third year at Ryerson University.</p>
 
             <p style="font-size:14px;">Whether its with a sketchbook and pencil or a sewing machine, she loves to create innovative things. She currently designs jewelry and clothes and likes working with different materials. She interned at <a href="http://paperpeopleclothing.com/" target="_blank">Paper People Clothing</a>, <a href="http://www.jeremylaing.com/" target="_blank">Jeremy Laing</a>, <a href="http://caitlinpower.com/" target="_blank">Caitlin Power</a> and is currently a Sales Associate at <a href="http://www.siblings.ca/" target="_blank">Siblings.</a></p>
 

@@ -133,8 +133,15 @@ height: 0px;
 
 .portfolioNav{
     padding-bottom:50px;
-    width:132px;
     margin:0 auto;
+}
+
+#jewelryNav{
+        width:170px;
+}
+
+#clothingNav{
+    width:132px;
 }
 
 
@@ -279,64 +286,6 @@ ul, li{
     display:inline-block;
 }
 
-#navBar {
-    padding: 0;
-    width: 100%;
-    z-index: 99999;
-    color:#FFFFFF;
-    height:100px;
-}
-
-#navBar li{
-    background-color: #000000;
-    padding:3px 0px;
-    width:90px;
-    margin-right:80px;
-    cursor: pointer;
-    color: #FFFFFF;
-}
-
-#navBar .navLinks{
-    margin:auto;
-    text-align:center;
-    width:100%;
-}
-
-#navBar .navLinks li:hover{
-    color:#e90455;
-}
-
-
-#blackBar{
-    width:100%;
-    background-color:#000000;
-    height:5px;
-    margin-bottom:20px;
-}
-
-.navLinks div {
-    background-color: #000000;
-    color:#FFFFFF;
-    display:block;
-    width:90px;
-    float:left;
-    margin:0px 50px;
-    text-align:center;
-    padding:3px;
-}
-
-.navLinks ul {
-    background-color: #000000;
-    color:#FFFFFF;
-    display:block;
-    width:90px;
-    float:left;
-    margin:0px 50px;
-    text-align:center;
-    padding:3px;
-    margin:0;
-}
-
 
 #slide4 a {
     text-decoration: none;
@@ -347,23 +296,6 @@ ul, li{
 #slide4 a:hover {
     color: #a82a35;
 }
-
-#navBar ul {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding:5px 0px;
-    font-family:"Open Sans Condensed",sans-serif;
-    font-size:12px;
-}
-
-#navBar .navLinks a:hover {
-    color:#e90455;
-}
-
-#navBar .lastTab{
-    margin-right:0px;
-}
-
 
 
 .content{
