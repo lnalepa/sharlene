@@ -1,23 +1,20 @@
 
+<html>
 <head>
+    <meta charset='utf-8'/>
 <title>Sharlene Robertson Designs</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
+<script src='jquery-1.8.3.min.js'></script>
+<script src='jquery.elevatezoom.js'></script>
 <script type="text/javascript">
 
     function getSlide(section, action, num){
-       
         var change = true; 
         var oldImg;
         var newImg; 
 
         oldImg = $('#'+section+'Pictures img.sel').attr('id');
         oldImg = oldImg.substr(section.length ,oldImg.length);
-
 
         if (action == 'prev'){
             if (parseInt(oldImg) ==1){
@@ -28,7 +25,7 @@
             }    
         }
         else if (action == 'next'){
-            if ((parseInt(oldImg) == 8 && section == 'clothing')||(parseInt(oldImg) == 10 && section == 'jewelry')){
+            if ((parseInt(oldImg) == 7 && section == 'clothing')||(parseInt(oldImg) == 10 && section == 'jewelry')){
                 change = false; 
             }
             else{
@@ -49,120 +46,133 @@
         }
     }
 
+    // $(function() {
+    //     $('.zoom').elevateZoom({zoomWindowWidth: 200,
+    //                             zoomWindowFadeIn: 500,
+    //                             zoomWindowFadeOut: 500,
+    //                             lensFadeIn: 500,
+    //                             lensFadeOut: 500,
+    //                             zoomType: "inner"
+    //     });
+    // })
+
 </script>
-
-
-<div id="content" class="" style="">
-    <div class="SSSlide clip_frame fullscreen" id="u3282"><!-- image -->
-        <img class="ImageInclude" id="u3282_img" src="img/home.jpg" alt="" data-width="7780" data-height="4256" />
-    </div>
-
-    <div class="slide" id="slide1">
-        <div id="logo" style="width:253.5px; margin:0 auto; padding-top:50px; padding-bottom:50px;">
-        <img src="img/logo.png" style="margin:0 auto; width:253.5px; height:223.5px">
+</head>
+<body>
+    <div id="content" class="" style="">
+        <div class="SSSlide clip_frame fullscreen" id="u3282"><!-- image -->
+            <img id="slidingImg" src="img/banner.jpg" alt="" data-width="7780" data-height="4256" />
         </div>
-        <h1></h1>
-    </div>
 
-    
-    <div class="slide" id="slide2"><h1>ELEGANT<br/>SOPHISTICATED<br/>BOLD</h1></div>
-
-
-    <div id="slide3" class="slide">
-        <div style="width:980px; margin:0 auto;">
-        <h2>DESIGNS</h2>
-        <div id="clothingNav" class="portfolioNav">
-            <div class="popup_anchor"><div id="clothingcircle1" class="circle selected" onClick="getSlide('clothing', 'jump', '1')"></div></div>
-            <div class="popup_anchor" style="left:18px"><div id="clothingcircle2"  class="circle" onClick="getSlide('clothing', 'jump', '2')"></div></div>
-            <div class="popup_anchor" style="left:36px"><div id="clothingcircle3"  class="circle" onClick="getSlide('clothing', 'jump', '3')"></div></div>
-            <div class="popup_anchor" style="left:54px"><div id="clothingcircle4"  class="circle" onClick="getSlide('clothing', 'jump','4')"></div></div>
-            <div class="popup_anchor" style="left:72px"><div id="clothingcircle5"  class="circle" onClick="getSlide('clothing', 'jump','5')"></div></div>
-            <div class="popup_anchor" style="left:90px"><div id="clothingcircle6"  class="circle" onClick="getSlide('clothing', 'jump','6')"></div></div>
-            <div class="popup_anchor" style="left:108px"><div id="clothingcircle7"  class="circle" onClick="getSlide('clothing', 'jump','7')"></div></div>
-            <div class="popup_anchor" style="left:126px"><div id="clothingcircle8"  class="circle" onClick="getSlide('clothing', 'jump','8')"></div></div>
+        <div class="slide" id="slide1">
+            <div id="logo" style="width:253.5px; margin:0 auto; padding-top:50px; padding-bottom:50px;">
+            <img src="img/logo.png" style="margin:0 auto; width:253.5px; height:223.5px">
+            </div>
+            <h1></h1>
         </div>
-        <div style="width:980px; margin:0 auto; width:800px;">
-            <div class="floatLeft button" onClick="getSlide('clothing', prev', '')"><img src="img/backIcon.png" /></div>
-            <div class="portfolioSlide floatLeft" id="portfolioSlide">
-                <div id="clothingPictures" style="overflow:hidden; width:650px; height:400px;">
-                    <img id="clothing1" class="sel" src="img/clothing1b.png"/>
-                    <img id="clothing2" src="img/clothing.png" style="display:none;"/>
-                    <img id="clothing3" src="img/clothing1a.png" style="display:none;"/>
-                    <img id="clothing4" src="img/clothingd.png" style="display:none;"/>
-                    <img id="clothing5" src="img/clothinge.png" style="display:none;"/>
-                    <img id="clothing6" src="img/clothingf.png" style="display:none;"/>
-                    <img id="clothing7" src="img/clothingg.png" style="display:none;"/>
-                    <img id="clothing8" src="img/clothingh.png" style="display:none;"/>
+
+        
+        <div class="slide" id="slide2"></div>
+
+
+
+        <div id="slide3" class="slide">
+            <div style="width:980px; margin:0 auto;">
+            <h2>DESIGNS</h2>
+            
+            <div id="clothingNav" class="portfolioNav">
+                <div class="popup_anchor"><div id="clothingcircle1" class="circle selected" onClick="getSlide('clothing', 'jump', '1')"></div></div>
+                <div class="popup_anchor" style="left:18px"><div id="clothingcircle2"  class="circle" onClick="getSlide('clothing', 'jump', '2')"></div></div>
+                <div class="popup_anchor" style="left:36px"><div id="clothingcircle3"  class="circle" onClick="getSlide('clothing', 'jump', '3')"></div></div>
+                <div class="popup_anchor" style="left:54px"><div id="clothingcircle4"  class="circle" onClick="getSlide('clothing', 'jump','4')"></div></div>
+                <div class="popup_anchor" style="left:72px"><div id="clothingcircle5"  class="circle" onClick="getSlide('clothing', 'jump','5')"></div></div>
+                <div class="popup_anchor" style="left:90px"><div id="clothingcircle6"  class="circle" onClick="getSlide('clothing', 'jump','6')"></div></div>
+                <div class="popup_anchor" style="left:108px"><div id="clothingcircle7"  class="circle" onClick="getSlide('clothing', 'jump','7')"></div></div>
+            </div>
+            <div style="width:980px; margin:0 auto; width:800px;">
+                <div class="floatLeft button" onClick="getSlide('clothing', 'prev', '')"><img src="img/backIcon.png" /></div>
+                <div class="portfolioSlide floatLeft" id="portfolioSlide">
+                    <div id="clothingPictures" style="overflow:hidden; width:650px; height:400px;">
+                        <img class="zoom sel" id="clothing1" src='img/clothing1b.png'/>
+                        <img class="zoom" id="clothing2" src="img/clothing.png" style="display:none;"/>
+                        <img class="zoom" id="clothing3" src="img/clothing1a.png" style="display:none;"/>
+                        <img class="zoom" id="clothing4" src="img/clothingd.png" style="display:none;"/>
+                        <img class="zoom" id="clothing5" src="img/clothinge.png" style="display:none;"/>
+                        <img class="zoom" id="clothing6" src="img/clothingf.png" style="display:none;"/>
+                        <img class="zoom" id="clothing7" src="img/clothingh.png" style="display:none;"/>
+                    </div>
+                </div>
+                <div class="floatLeft button" onClick="getSlide('clothing', 'next','')"><img src="img/nextIcon.png" /></div>
+            </div>
+            </div>
+        </div>
+
+        <div id="slide9" class="slide">
+            <div style="width:980px; margin:0 auto;">
+            <h2>JEWELRY</h2>
+            <div id="jewelryNav" class="portfolioNav">
+                <div class="popup_anchor"><div id="jewelrycircle1" class="circle selected" onClick="getSlide('jewelry', 'jump', '1')"></div></div>
+                <div class="popup_anchor" style="left:18px"><div id="jewelrycircle2"  class="circle" onClick="getSlide('jewelry', 'jump', '2')"></div></div>
+                <div class="popup_anchor" style="left:36px"><div id="jewelrycircle3"  class="circle" onClick="getSlide('jewelry', 'jump', '3')"></div></div>
+                <div class="popup_anchor" style="left:54px"><div id="jewelrycircle4"  class="circle" onClick="getSlide('jewelry', 'jump','4')"></div></div>
+                <div class="popup_anchor" style="left:72px"><div id="jewelrycircle5"  class="circle" onClick="getSlide('jewelry', 'jump','5')"></div></div>
+                <div class="popup_anchor" style="left:90px"><div id="jewelrycircle6"  class="circle" onClick="getSlide('jewelry', 'jump','6')"></div></div>
+                <div class="popup_anchor" style="left:108px"><div id="jewelrycircle7"  class="circle" onClick="getSlide('jewelry', 'jump','7')"></div></div>
+                <div class="popup_anchor" style="left:126px"><div id="jewelrycircle8"  class="circle" onClick="getSlide('jewelry', 'jump','8')"></div></div>
+                <div class="popup_anchor" style="left:144px"><div id="jewelrycircle9"  class="circle" onClick="getSlide('jewelry', 'jump','9')"></div></div>
+                <div class="popup_anchor" style="left:162px"><div id="jewelrycircle10"  class="circle" onClick="getSlide('jewelry', 'jump','10')"></div></div>
+            </div>
+            <div style="width:980px; margin:0 auto; width:800px;">
+                <div class="floatLeft button" onClick="getSlide('jewelry', 'prev', '')"><img src="img/backIcon.png" /></div>
+                <div class="portfolioSlide floatLeft" id="jewelrySlide">
+                    <div id="jewelryPictures" style="overflow:hidden; width:650px; height:400px;">
+                        <img id="jewelry1" class="sel" src="img/jewelryb.png"/>
+                        <img id="jewelry2" src="img/jewelryc.png" style="display:none;"/>
+                        <img id="jewelry3" src="img/jewelryd.png" style="display:none;"/>
+                        <img id="jewelry4" src="img/jewelrye.png" style="display:none;"/>
+                        <img id="jewelry5" src="img/jewelryf.png" style="display:none;"/>
+                        <img id="jewelry6" src="img/jewelryg.png" style="display:none;"/>
+                        <img id="jewelry7" src="img/jewelryh.png" style="display:none;"/>
+                        <img id="jewelry8" src="img/jewelryi.png" style="display:none;"/>
+                        <img id="jewelry9" src="img/jewelryj.png" style="display:none;"/>
+                        <img id="jewelry10" src="img/jewelryk.png" style="display:none;"/>
+                    </div>
+                </div>
+                <div class="floatLeft button" onClick="getSlide('jewelry', 'next','')"><img src="img/nextIcon.png" /></div>
+            </div>
+            </div>
+        </div>
+
+
+
+        <div class="slide" id="slide4">
+            <div id="sharlene" >
+                <div class="circleBorder">
+                <img src="img/about.jpg" >
                 </div>
             </div>
-            <div class="floatLeft button" onClick="getSlide('clothing', 'next','')"><img src="img/nextIcon.png" /></div>
-        </div>
-        </div>
-    </div>
+            <div id="aboutDescription">
+                <p style="padding-bottom:10px;">Sharlene Robertson aspires to be a Fashion Designer. She is a Fashion Design student in her third year at Ryerson University.</p>
 
-    <div id="slide9" class="slide">
-        <div style="width:980px; margin:0 auto;">
-        <h2>JEWELRY</h2>
-        <div id="jewelryNav" class="portfolioNav">
-            <div class="popup_anchor"><div id="jewelrycircle1" class="circle selected" onClick="getSlide('jewelry', 'jump', '1')"></div></div>
-            <div class="popup_anchor" style="left:18px"><div id="jewelrycircle2"  class="circle" onClick="getSlide('jewelry', 'jump', '2')"></div></div>
-            <div class="popup_anchor" style="left:36px"><div id="jewelrycircle3"  class="circle" onClick="getSlide('jewelry', 'jump', '3')"></div></div>
-            <div class="popup_anchor" style="left:54px"><div id="jewelrycircle4"  class="circle" onClick="getSlide('jewelry', 'jump','4')"></div></div>
-            <div class="popup_anchor" style="left:72px"><div id="jewelrycircle5"  class="circle" onClick="getSlide('jewelry', 'jump','5')"></div></div>
-            <div class="popup_anchor" style="left:90px"><div id="jewelrycircle6"  class="circle" onClick="getSlide('jewelry', 'jump','6')"></div></div>
-            <div class="popup_anchor" style="left:108px"><div id="jewelrycircle7"  class="circle" onClick="getSlide('jewelry', 'jump','7')"></div></div>
-            <div class="popup_anchor" style="left:126px"><div id="jewelrycircle8"  class="circle" onClick="getSlide('jewelry', 'jump','8')"></div></div>
-            <div class="popup_anchor" style="left:144px"><div id="jewelrycircle9"  class="circle" onClick="getSlide('jewelry', 'jump','9')"></div></div>
-            <div class="popup_anchor" style="left:162px"><div id="jewelrycircle10"  class="circle" onClick="getSlide('jewelry', 'jump','10')"></div></div>
-        </div>
-        <div style="width:980px; margin:0 auto; width:800px;">
-            <div class="floatLeft button" onClick="getSlide('jewelry', 'prev', '')"><img src="img/backIcon.png" /></div>
-            <div class="portfolioSlide floatLeft" id="jewelrySlide">
-                <div id="jewelryPictures" style="overflow:hidden; width:650px; height:400px;">
-                    <img id="jewelry1" class="sel" src="img/jewelryb.png"/>
-                    <img id="jewelry2" src="img/jewelryc.png" style="display:none;"/>
-                    <img id="jewelry3" src="img/jewelryd.png" style="display:none;"/>
-                    <img id="jewelry4" src="img/jewelrye.png" style="display:none;"/>
-                    <img id="jewelry5" src="img/jewelryf.png" style="display:none;"/>
-                    <img id="jewelry6" src="img/jewelryg.png" style="display:none;"/>
-                    <img id="jewelry7" src="img/jewelryh.png" style="display:none;"/>
-                    <img id="jewelry8" src="img/jewelryi.png" style="display:none;"/>
-                    <img id="jewelry9" src="img/jewelryj.png" style="display:none;"/>
-                    <img id="jewelry10" src="img/jewelryk.png" style="display:none;"/>
-                </div>
+                <p style="font-size:14px;">Whether its with a sketchbook and pencil or a sewing machine, she loves to create innovative things. She currently designs jewelry and clothes and likes working with different materials. She interned at <a href="http://paperpeopleclothing.com/" target="_blank">Paper People Clothing</a>, <a href="http://www.jeremylaing.com/" target="_blank">Jeremy Laing</a>, <a href="http://caitlinpower.com/" target="_blank">Caitlin Power</a> and is currently a Sales Associate at <a href="http://www.siblings.ca/" target="_blank">Siblings.</a></p>
+
+                <p>Get in touch: <br/> <p><a href="mailto:sharleneroberston@ryerson.ca"><img id="emailG" class="" src="img/emailGrey.png" style=""/>sharleneroberston@ryerson.ca</a></p>
             </div>
-            <div class="floatLeft button" onClick="getSlide('jewelry', 'next','')"><img src="img/nextIcon.png" /></div>
-        </div>
-        </div>
-    </div>
+        </div>  
+        
 
-
-
-    <div class="slide" id="slide4">
-        <div id="sharlene" >
-            <div class="circleBorder">
-            <img src="img/about.jpg" >
+        <div id="slide6" class="slide">
+            <div id="logos">
+                <a href="https://www.facebook.com/sharlene.robertson?fref=ts" target="_blank"><img id="fb" class="logo" src="img/fbLogo.png" style=""/></a>
+                <a href="mailto:sharleneroberston@ryerson.ca"><img id="email" class="logo" src="img/email.png" style=""/></a>
+                <a href="https://twitter.com/Sharrobertson" target="_blank"><img id="twitter" class="logo" src="img/twitterLogo.png" style=""/></a>
+                <a href="http://ca.linkedin.com/pub/sharlene-robertson/78/141/37a" target="_blank"><img id="linkedin" class="logo"  src="img/linkedinLogo.png" style=""/></a>
             </div>
+            <div id="copyright">2014 &copy;</div>
+            <img id="border" src="img/border.png" />
         </div>
-        <div id="aboutDescription" style="text-align:center; width:600px; margin:0 auto;">
-            <p style="padding-bottom:10px;">Sharlene Robertson aspires to be a Fashion Designer. She is a Fashion Design student in her third year at Ryerson University.</p>
 
-            <p style="font-size:14px;">Whether its with a sketchbook and pencil or a sewing machine, she loves to create innovative things. She currently designs jewelry and clothes and likes working with different materials. She interned at <a href="http://paperpeopleclothing.com/" target="_blank">Paper People Clothing</a>, <a href="http://www.jeremylaing.com/" target="_blank">Jeremy Laing</a>, <a href="http://caitlinpower.com/" target="_blank">Caitlin Power</a> and is currently a Sales Associate at <a href="http://www.siblings.ca/" target="_blank">Siblings.</a></p>
-
-            <p>Get in touch: <br/> <p><a href="mailto:sharleneroberston@ryerson.ca"><img id="emailG" class="" src="img/emailGrey.png" style=""/>sharleneroberston@ryerson.ca</a></p>
-        </div>
-    </div>  
-    
-
-    <div id="slide6" class="slide">
-        <div id="logos">
-            <a href="https://www.facebook.com/sharlene.robertson?fref=ts" target="_blank"><img id="fb" class="logo" src="img/fbLogo.png" style=""/></a>
-            <a href="mailto:sharleneroberston@ryerson.ca"><img id="email" class="logo" src="img/email.png" style=""/></a>
-            <a href="https://twitter.com/Sharrobertson" target="_blank"><img id="twitter" class="logo" src="img/twitterLogo.png" style=""/></a>
-            <a href="http://ca.linkedin.com/pub/sharlene-robertson/78/141/37a" target="_blank"><img id="linkedin" class="logo"  src="img/linkedinLogo.png" style=""/></a>
-        </div>
-        <div id="copyright">2014 &copy;</div>
-        <img src="img/border.png" />
     </div>
 
-</div>
+</body>
+</html>

@@ -11,8 +11,8 @@ h2{
     font-family: asap, sans-serif;
 }
 
-#content{
-    background-image:url('img/home.jpg');
+#slidingImg{
+    width:100%;
 }
 
 .fullscreen{
@@ -212,7 +212,7 @@ height: 0px;
 #sharlene{
     padding-bottom:30px;
     margin:0 auto; 
-    width:220px; 
+    width:180px; 
     text-align: center;
 }
 
@@ -222,6 +222,13 @@ height: 0px;
     border-radius:440px;
     margin-top:5px;
 }
+
+#aboutDescription{
+    text-align:center;
+    width:60%;
+    margin:0 auto;
+}
+
 
 #slide4 a:hover{
     color:#000000;
@@ -320,6 +327,10 @@ ul, li{
     color:#5D5D5D; 
     opacity:0.75;
     font-size:12px;
+}
+
+#border{
+    width:100%;
 }
 
 
