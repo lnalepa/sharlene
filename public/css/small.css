@@ -1,0 +1,116 @@
+
+h2{
+    font-size:2.8em;
+}
+
+.fullscreen{
+    display:none;
+}
+
+#aboutDescription{
+    font-size:26px;
+    width:90%;
+}
+
+#subDescription{
+    font-size:18px;
+}
+
+.circleBorder{
+    width:300px;
+    height:300px;
+}
+
+#sharlene img{
+    width:290px;
+    height:290px;
+}
+
+#sharlene{
+    width:290px;
+}
+
+.fullscreen img{
+    position:fixed;
+}
+
+#logo{
+    width:381px; 
+    height:336px;
+}
+
+#logo img{
+    width:450px;
+    height:336px;
+}
+
+#logos img{
+    height:50px;
+}
+
+
+#logos img{
+    padding:0 40px 0 40px;
+}
+
+#slide3{
+    height:660px;
+}
+
+.portfolioNav .circle{
+    width: 20px;
+    height: 20px;
+}
+
+#slide9{
+    height:660px;
+}
+
+.circle2{
+    left:40px;
+}
+
+.circle3{
+    left:80px;
+}
+
+.circle4{
+    left:120px;
+}
+
+.circle5{
+    left:160px;
+}
+
+.circle6{
+    left:200px;
+}
+
+.circle7{
+    left:240px;
+}
+
+.circle8{
+    left:280px;
+}
+
+.circle9{
+    left:320px;
+}
+
+.circle10{
+    left:360px;
+}
+
+.portfolioNav{
+    margin-bottom:50px;
+}
+
+#jewelryNav{
+        width:390px;
+}
+
+#clothingNav{
+    width:275px;
+}
+

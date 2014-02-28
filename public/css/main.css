@@ -11,6 +11,7 @@ h2{
     font-family: asap, sans-serif;
 }
 
+
 #slidingImg{
     width:100%;
 }
@@ -225,10 +226,9 @@ height: 0px;
 
 #aboutDescription{
     text-align:center;
-    width:60%;
+    width:50%;
     margin:0 auto;
 }
-
 
 #slide4 a:hover{
     color:#000000;
@@ -332,5 +332,4 @@ ul, li{
 #border{
     width:100%;
 }
-
 
