@@ -7,6 +7,15 @@ h2{
     display:none;
 }
 
+#slide2{
+    padding:0;
+}
+
+#banner{
+    display:inline;
+    width:100%;
+}
+
 #aboutDescription{
     font-size:26px;
     width:90%;
@@ -46,15 +55,19 @@ h2{
 
 #logos img{
     height:50px;
+    padding:0 40px 0 40px;
 }
 
-
-#logos img{
-    padding:0 40px 0 40px;
+#logos{
+    margin-bottom:100px;
 }
 
 #slide3{
     height:660px;
+}
+
+#slide2{
+    background-image:url('img/banner.jpg');
 }
 
 .portfolioNav .circle{
@@ -107,10 +120,19 @@ h2{
 }
 
 #jewelryNav{
-        width:390px;
+        width:350px;
 }
 
 #clothingNav{
-    width:275px;
+    width:230px;
+}
+
+#copyright{
+    font-size:24px;
+}
+
+#slide4{
+    padding-top:80px; 
+    padding-bottom:80px;
 }
 

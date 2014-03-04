@@ -36,6 +36,19 @@ h2{
     text-align:center;
 }
 
+#logo{
+    width:253.5px; 
+    margin:0 auto; 
+    padding-top:50px; 
+    padding-bottom:50px;"
+}
+
+#logo img{
+    margin:0 auto; 
+    width:253.5px; 
+    height:223.5px
+}
+
 .button{
     cursor: pointer;
     height:400px;
@@ -68,7 +81,7 @@ h2{
 
 #slide3{
     background-color: #F5F6F7;
-    height:550px;
+    height:580px;
 }
 
 .portfolioNav .circle{
@@ -106,6 +119,42 @@ h2{
     margin: 0px;
 }
 
+.circle2{
+    left:18px;
+}
+
+.circle3{
+    left:36px;
+}
+
+.circle4{
+    left:54px;
+}
+
+.circle5{
+    left:72px;
+}
+
+.circle6{
+    left:90px;
+}
+
+.circle7{
+    left:108px;
+}
+
+.circle8{
+    left:126px;
+}
+
+.circle9{
+    left:144px;
+}
+
+.circle10{
+    left:162px;
+}
+
 .popup_anchor {
 position: relative;
 width: 0px;
@@ -138,11 +187,11 @@ height: 0px;
 }
 
 #jewelryNav{
-        width:170px;
+        width:145px;
 }
 
 #clothingNav{
-    width:132px;
+    width:94px;
 }
 
 
@@ -230,6 +279,11 @@ height: 0px;
     margin:0 auto;
 }
 
+#subDescription{
+
+    font-size:14px;
+}
+
 #slide4 a:hover{
     color:#000000;
 }
@@ -241,7 +295,7 @@ height: 0px;
 #slide6{
     background-color: #000000;
     padding-top:50px;
-    padding-bottom:0px;
+    padding-bottom:10px;
 }
 
 #slide6 img{
@@ -331,5 +385,7 @@ ul, li{
 
 #border{
     width:100%;
+    position:relative;
+    bottom:-10px;
 }
 
